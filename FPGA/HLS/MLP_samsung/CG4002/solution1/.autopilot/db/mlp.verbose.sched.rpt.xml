@@ -1,0 +1,59 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mlp'" level="0">
+<item name = "Date">Mon Feb 15 02:39:53 2021
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">CG4002</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.808 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_35_1">?, ?, 27 ~ 809292, -, -, inf, no</column>
+<column name=" + VITIS_LOOP_45_2">22, 22, 13, 10, 1, 2, yes</column>
+<column name=" + VITIS_LOOP_54_3_VITIS_LOOP_55_4">440966, 440966, 17, 10, 1, 44096, yes</column>
+<column name=" + VITIS_LOOP_60_5_VITIS_LOOP_61_6">3846, 3846, 17, 10, 1, 384, yes</column>
+<column name=" + VITIS_LOOP_66_7">1986, 1986, 17, 10, 1, 198, yes</column>
+<column name=" + layer1_loop">360576, 360576, 5634, -, -, 64, no</column>
+<column name="  ++ VITIS_LOOP_74_8">5630, 5630, 26, 10, 1, 561, yes</column>
+<column name=" + layer1_bias">70, 70, 8, 1, 1, 64, yes</column>
+<column name=" + layer2_loop">577, 577, 326, 4, 1, 64, yes</column>
+<column name=" + layer2_bias">70, 70, 8, 1, 1, 64, yes</column>
+<column name=" + layer3_loop">577, 577, 326, 4, 1, 64, yes</column>
+<column name=" + layer3_bias">70, 70, 8, 1, 1, 64, yes</column>
+<column name=" + layer4_loop">344, 344, 325, 4, 1, 6, yes</column>
+<column name=" + layer4_bias">68, 68, 19, 10, 1, 6, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
