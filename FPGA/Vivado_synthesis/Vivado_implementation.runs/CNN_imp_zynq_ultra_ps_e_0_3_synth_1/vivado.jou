@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Feb 15 23:29:50 2021
+# Process ID: 28052
+# Current directory: F:/CNNproj/Ultra96/FPGA/Vivado_synthesis/Vivado_implementation.runs/CNN_imp_zynq_ultra_ps_e_0_3_synth_1
+# Command line: vivado.exe -log CNN_imp_zynq_ultra_ps_e_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CNN_imp_zynq_ultra_ps_e_0_3.tcl
+# Log file: F:/CNNproj/Ultra96/FPGA/Vivado_synthesis/Vivado_implementation.runs/CNN_imp_zynq_ultra_ps_e_0_3_synth_1/CNN_imp_zynq_ultra_ps_e_0_3.vds
+# Journal file: F:/CNNproj/Ultra96/FPGA/Vivado_synthesis/Vivado_implementation.runs/CNN_imp_zynq_ultra_ps_e_0_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source CNN_imp_zynq_ultra_ps_e_0_3.tcl -notrace

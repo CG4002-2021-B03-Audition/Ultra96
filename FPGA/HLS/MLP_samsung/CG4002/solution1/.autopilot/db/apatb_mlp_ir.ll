@@ -4,9 +4,9 @@ target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:20
 target triple = "fpga64-xilinx-none"
 
 %"struct.hls::axis" = type { %struct.ap_uint, %struct.ap_uint.1, %struct.ap_uint.1, %struct.ap_uint.4, %struct.ap_uint.4, %struct.ap_uint.4, %struct.ap_uint.4 }
-%struct.ap_uint = type { %struct.ap_fixed_base.7 }
-%struct.ap_fixed_base.7 = type { %struct.ssdm_int.8 }
-%struct.ssdm_int.8 = type { i32 }
+%struct.ap_uint = type { %struct.ap_fixed_base.13 }
+%struct.ap_fixed_base.13 = type { %struct.ssdm_int.14 }
+%struct.ssdm_int.14 = type { i32 }
 %struct.ap_uint.1 = type { %struct.ap_int_base.2 }
 %struct.ap_int_base.2 = type { %struct.ssdm_int.3 }
 %struct.ssdm_int.3 = type { i4 }
@@ -59,7 +59,7 @@ copy:                                             ; preds = %entry
   br i1 %9, label %10, label %11
 
 ; <label>:10:                                     ; preds = %8
-  call fastcc void @streamcpy_hls.p0struct.ap_fixed_base.7(%struct.ap_fixed_base.7* align 512 %.01.09, %struct.ap_fixed_base.7* %.0.08)
+  call fastcc void @streamcpy_hls.p0struct.ap_fixed_base.13(%struct.ap_fixed_base.13* align 512 %.01.09, %struct.ap_fixed_base.13* %.0.08)
   br label %16
 
 ; <label>:11:                                     ; preds = %8
@@ -69,7 +69,7 @@ copy:                                             ; preds = %entry
   br i1 %12, label %13, label %14
 
 ; <label>:13:                                     ; preds = %11
-  call fastcc void @streamcpy_hls.p0struct.ssdm_int.8(%struct.ssdm_int.8* align 512 %.01.0.011, %struct.ssdm_int.8* %.0.0.010)
+  call fastcc void @streamcpy_hls.p0struct.ssdm_int.14(%struct.ssdm_int.14* align 512 %.01.0.011, %struct.ssdm_int.14* %.0.0.010)
   br label %16
 
 ; <label>:14:                                     ; preds = %11
@@ -361,57 +361,57 @@ ret:                                              ; preds = %empty
 declare void @llvm.memcpy.p0i8.p0i8.i64(i8* nocapture writeonly, i8* nocapture readonly, i64, i1) #4
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @streamcpy_hls.p0struct.ap_fixed_base.7(%struct.ap_fixed_base.7* noalias nocapture align 512, %struct.ap_fixed_base.7* noalias nocapture) unnamed_addr #3 {
+define internal fastcc void @streamcpy_hls.p0struct.ap_fixed_base.13(%struct.ap_fixed_base.13* noalias nocapture align 512, %struct.ap_fixed_base.13* noalias nocapture) unnamed_addr #3 {
 entry:
-  %2 = alloca %struct.ap_fixed_base.7
+  %2 = alloca %struct.ap_fixed_base.13
   br label %empty
 
 empty:                                            ; preds = %push, %entry
-  %3 = bitcast %struct.ap_fixed_base.7* %1 to i8*
+  %3 = bitcast %struct.ap_fixed_base.13* %1 to i8*
   %4 = call i1 @fpga_fifo_not_empty_4(i8* %3)
   br i1 %4, label %push, label %ret
 
 push:                                             ; preds = %empty
-  %5 = bitcast %struct.ap_fixed_base.7* %2 to i8*
-  %6 = bitcast %struct.ap_fixed_base.7* %1 to i8*
+  %5 = bitcast %struct.ap_fixed_base.13* %2 to i8*
+  %6 = bitcast %struct.ap_fixed_base.13* %1 to i8*
   call void @fpga_fifo_pop_4(i8* %5, i8* %6)
-  %7 = load volatile %struct.ap_fixed_base.7, %struct.ap_fixed_base.7* %2
-  %8 = bitcast %struct.ap_fixed_base.7* %2 to i8*
-  %9 = bitcast %struct.ap_fixed_base.7* %0 to i8*
+  %7 = load volatile %struct.ap_fixed_base.13, %struct.ap_fixed_base.13* %2
+  %8 = bitcast %struct.ap_fixed_base.13* %2 to i8*
+  %9 = bitcast %struct.ap_fixed_base.13* %0 to i8*
   call void @fpga_fifo_push_4(i8* %8, i8* %9)
   br label %empty, !llvm.loop !7
 
 ret:                                              ; preds = %empty
-  %10 = bitcast %struct.ap_fixed_base.7* %1 to i8*
-  %11 = bitcast %struct.ap_fixed_base.7* %0 to i8*
+  %10 = bitcast %struct.ap_fixed_base.13* %1 to i8*
+  %11 = bitcast %struct.ap_fixed_base.13* %0 to i8*
   call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 4, i1 false)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @streamcpy_hls.p0struct.ssdm_int.8(%struct.ssdm_int.8* noalias nocapture align 512, %struct.ssdm_int.8* noalias nocapture) unnamed_addr #3 {
+define internal fastcc void @streamcpy_hls.p0struct.ssdm_int.14(%struct.ssdm_int.14* noalias nocapture align 512, %struct.ssdm_int.14* noalias nocapture) unnamed_addr #3 {
 entry:
-  %2 = alloca %struct.ssdm_int.8
+  %2 = alloca %struct.ssdm_int.14
   br label %empty
 
 empty:                                            ; preds = %push, %entry
-  %3 = bitcast %struct.ssdm_int.8* %1 to i8*
+  %3 = bitcast %struct.ssdm_int.14* %1 to i8*
   %4 = call i1 @fpga_fifo_not_empty_4(i8* %3)
   br i1 %4, label %push, label %ret
 
 push:                                             ; preds = %empty
-  %5 = bitcast %struct.ssdm_int.8* %2 to i8*
-  %6 = bitcast %struct.ssdm_int.8* %1 to i8*
+  %5 = bitcast %struct.ssdm_int.14* %2 to i8*
+  %6 = bitcast %struct.ssdm_int.14* %1 to i8*
   call void @fpga_fifo_pop_4(i8* %5, i8* %6)
-  %7 = load volatile %struct.ssdm_int.8, %struct.ssdm_int.8* %2
-  %8 = bitcast %struct.ssdm_int.8* %2 to i8*
-  %9 = bitcast %struct.ssdm_int.8* %0 to i8*
+  %7 = load volatile %struct.ssdm_int.14, %struct.ssdm_int.14* %2
+  %8 = bitcast %struct.ssdm_int.14* %2 to i8*
+  %9 = bitcast %struct.ssdm_int.14* %0 to i8*
   call void @fpga_fifo_push_4(i8* %8, i8* %9)
   br label %empty, !llvm.loop !8
 
 ret:                                              ; preds = %empty
-  %10 = bitcast %struct.ssdm_int.8* %1 to i8*
-  %11 = bitcast %struct.ssdm_int.8* %0 to i8*
+  %10 = bitcast %struct.ssdm_int.14* %1 to i8*
+  %11 = bitcast %struct.ssdm_int.14* %0 to i8*
   call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 1 %11, i8* align 1 %10, i64 4, i1 false)
   ret void
 }

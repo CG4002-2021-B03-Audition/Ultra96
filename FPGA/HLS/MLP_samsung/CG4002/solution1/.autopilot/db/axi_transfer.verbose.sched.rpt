@@ -3,13 +3,13 @@
 ================================================================
 == Vitis HLS Report for 'axi_transfer'
 ================================================================
-* Date:           Mon Feb 15 02:39:46 2021
+* Date:           Tue Feb 16 00:08:22 2021
 
 * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
 * Project:        CG4002
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynquplus
-* Target device:  xczu3eg-sbva484-1-i
+* Target device:  xczu3eg-sbva484-1-e
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|      0 ns|     2.70 ns|
+    |ap_clk  |  10.00 ns|  0.264 ns|     2.70 ns|
     +--------+----------+----------+------------+
 
 + Latency: 
@@ -95,72 +95,71 @@ ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%in_read = read i8 @_ssdm_op_Read.a
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln12 = br i1 %loop_read, void, void" [main.cpp:12]   --->   Operation 15 'br' 'br_ln12' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%value_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %value_r"   --->   Operation 16 'read' 'value_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%value_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %value_r"   --->   Operation 16 'read' 'value_read' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%in_read_1 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r"   --->   Operation 17 'read' 'in_read_1' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%trunc_ln15 = trunc i32 %value_read" [main.cpp:15]   --->   Operation 18 'trunc' 'trunc_ln15' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %trunc_ln15" [main.cpp:15]   --->   Operation 19 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%p_s = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %value_read, i32 8, i32 15" [main.cpp:15]   --->   Operation 20 'partselect' 'p_s' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%p_1 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %value_read, i32 16, i32 23" [main.cpp:15]   --->   Operation 21 'partselect' 'p_1' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%p_2 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %value_read, i32 24, i32 31" [main.cpp:15]   --->   Operation 22 'partselect' 'p_2' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln15 = sext i4 %value_read" [main.cpp:15]   --->   Operation 18 'sext' 'sext_ln15' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %sext_ln15" [main.cpp:15]   --->   Operation 19 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i4.i32, i4 %value_read, i32 3" [main.cpp:15]   --->   Operation 20 'bitselect' 'tmp' <Predicate = (!loop_read)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%in_read_2 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r"   --->   Operation 23 'read' 'in_read_2' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %p_s" [main.cpp:15]   --->   Operation 24 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+State 3 <SV = 2> <Delay = 0.26>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%in_read_2 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r"   --->   Operation 21 'read' 'in_read_2' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 22 [1/1] (0.26ns)   --->   "%select_ln15 = select i1 %tmp, i8 255, i8 0" [main.cpp:15]   --->   Operation 22 'select' 'select_ln15' <Predicate = (!loop_read)> <Delay = 0.26> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.26> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %select_ln15" [main.cpp:15]   --->   Operation 23 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%in_read_3 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r"   --->   Operation 25 'read' 'in_read_3' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %p_1" [main.cpp:15]   --->   Operation 26 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%in_read_3 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r"   --->   Operation 24 'read' 'in_read_3' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %select_ln15" [main.cpp:15]   --->   Operation 25 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %p_2" [main.cpp:15]   --->   Operation 27 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%in_read_4 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:16]   --->   Operation 28 'read' 'in_read_4' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln16 = trunc i8 %in_read_4" [main.cpp:16]   --->   Operation 29 'trunc' 'trunc_ln16' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%write_ln15 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %select_ln15" [main.cpp:15]   --->   Operation 26 'write' 'write_ln15' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%in_read_4 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:16]   --->   Operation 27 'read' 'in_read_4' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln16 = trunc i8 %in_read_4" [main.cpp:16]   --->   Operation 28 'trunc' 'trunc_ln16' <Predicate = (!loop_read)> <Delay = 0.00>
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i1 %trunc_ln16" [main.cpp:16]   --->   Operation 30 'zext' 'zext_ln16' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%write_ln16 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln16" [main.cpp:16]   --->   Operation 31 'write' 'write_ln16' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%in_read_5 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:17]   --->   Operation 32 'read' 'in_read_5' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%trunc_ln17 = trunc i8 %in_read_5" [main.cpp:17]   --->   Operation 33 'trunc' 'trunc_ln17' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i1 %trunc_ln16" [main.cpp:16]   --->   Operation 29 'zext' 'zext_ln16' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%write_ln16 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln16" [main.cpp:16]   --->   Operation 30 'write' 'write_ln16' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%in_read_5 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:17]   --->   Operation 31 'read' 'in_read_5' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%trunc_ln17 = trunc i8 %in_read_5" [main.cpp:17]   --->   Operation 32 'trunc' 'trunc_ln17' <Predicate = (!loop_read)> <Delay = 0.00>
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln17 = zext i1 %trunc_ln17" [main.cpp:17]   --->   Operation 34 'zext' 'zext_ln17' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_7 : Operation 35 [1/1] (0.00ns)   --->   "%write_ln17 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln17" [main.cpp:17]   --->   Operation 35 'write' 'write_ln17' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_7 : Operation 36 [1/1] (0.00ns)   --->   "%in_read_6 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:18]   --->   Operation 36 'read' 'in_read_6' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_7 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln18 = trunc i8 %in_read_6" [main.cpp:18]   --->   Operation 37 'trunc' 'trunc_ln18' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln17 = zext i1 %trunc_ln17" [main.cpp:17]   --->   Operation 33 'zext' 'zext_ln17' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%write_ln17 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln17" [main.cpp:17]   --->   Operation 34 'write' 'write_ln17' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_7 : Operation 35 [1/1] (0.00ns)   --->   "%in_read_6 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:18]   --->   Operation 35 'read' 'in_read_6' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_7 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln18 = trunc i8 %in_read_6" [main.cpp:18]   --->   Operation 36 'trunc' 'trunc_ln18' <Predicate = (!loop_read)> <Delay = 0.00>
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln18 = zext i4 %trunc_ln18" [main.cpp:18]   --->   Operation 38 'zext' 'zext_ln18' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln18" [main.cpp:18]   --->   Operation 39 'write' 'write_ln18' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%in_read_7 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:19]   --->   Operation 40 'read' 'in_read_7' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%trunc_ln19 = trunc i8 %in_read_7" [main.cpp:19]   --->   Operation 41 'trunc' 'trunc_ln19' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read" [main.cpp:13]   --->   Operation 42 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln18 = zext i4 %trunc_ln18" [main.cpp:18]   --->   Operation 37 'zext' 'zext_ln18' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%write_ln18 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln18" [main.cpp:18]   --->   Operation 38 'write' 'write_ln18' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%in_read_7 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:19]   --->   Operation 39 'read' 'in_read_7' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%trunc_ln19 = trunc i8 %in_read_7" [main.cpp:19]   --->   Operation 40 'trunc' 'trunc_ln19' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read" [main.cpp:13]   --->   Operation 41 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln19 = zext i1 %trunc_ln19" [main.cpp:19]   --->   Operation 43 'zext' 'zext_ln19' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_9 : Operation 44 [1/1] (0.00ns)   --->   "%write_ln19 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln19" [main.cpp:19]   --->   Operation 44 'write' 'write_ln19' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_9 : Operation 45 [1/1] (0.00ns)   --->   "%in_read_8 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:20]   --->   Operation 45 'read' 'in_read_8' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_9 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln20 = trunc i8 %in_read_8" [main.cpp:20]   --->   Operation 46 'trunc' 'trunc_ln20' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_9 : Operation 47 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read_1" [main.cpp:13]   --->   Operation 47 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_9 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln19 = zext i1 %trunc_ln19" [main.cpp:19]   --->   Operation 42 'zext' 'zext_ln19' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_9 : Operation 43 [1/1] (0.00ns)   --->   "%write_ln19 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln19" [main.cpp:19]   --->   Operation 43 'write' 'write_ln19' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_9 : Operation 44 [1/1] (0.00ns)   --->   "%in_read_8 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:20]   --->   Operation 44 'read' 'in_read_8' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_9 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln20 = trunc i8 %in_read_8" [main.cpp:20]   --->   Operation 45 'trunc' 'trunc_ln20' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_9 : Operation 46 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read_1" [main.cpp:13]   --->   Operation 46 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln20 = zext i4 %trunc_ln20" [main.cpp:20]   --->   Operation 48 'zext' 'zext_ln20' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_10 : Operation 49 [1/1] (0.00ns)   --->   "%write_ln20 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln20" [main.cpp:20]   --->   Operation 49 'write' 'write_ln20' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_10 : Operation 50 [1/1] (0.00ns)   --->   "%in_read_9 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:21]   --->   Operation 50 'read' 'in_read_9' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_10 : Operation 51 [1/1] (0.00ns)   --->   "%trunc_ln21 = trunc i8 %in_read_9" [main.cpp:21]   --->   Operation 51 'trunc' 'trunc_ln21' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_10 : Operation 52 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read_2" [main.cpp:13]   --->   Operation 52 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_10 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln20 = zext i4 %trunc_ln20" [main.cpp:20]   --->   Operation 47 'zext' 'zext_ln20' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_10 : Operation 48 [1/1] (0.00ns)   --->   "%write_ln20 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln20" [main.cpp:20]   --->   Operation 48 'write' 'write_ln20' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_10 : Operation 49 [1/1] (0.00ns)   --->   "%in_read_9 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %in_r" [main.cpp:21]   --->   Operation 49 'read' 'in_read_9' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_10 : Operation 50 [1/1] (0.00ns)   --->   "%trunc_ln21 = trunc i8 %in_read_9" [main.cpp:21]   --->   Operation 50 'trunc' 'trunc_ln21' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_10 : Operation 51 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read_2" [main.cpp:13]   --->   Operation 51 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln21 = zext i1 %trunc_ln21" [main.cpp:21]   --->   Operation 53 'zext' 'zext_ln21' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%write_ln21 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln21" [main.cpp:21]   --->   Operation 54 'write' 'write_ln21' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 55 'br' 'br_ln0' <Predicate = (!loop_read)> <Delay = 0.00>
-ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read_3" [main.cpp:13]   --->   Operation 56 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_11 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln14 = br void" [main.cpp:14]   --->   Operation 57 'br' 'br_ln14' <Predicate = (loop_read)> <Delay = 0.00>
+ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%zext_ln21 = zext i1 %trunc_ln21" [main.cpp:21]   --->   Operation 52 'zext' 'zext_ln21' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%write_ln21 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %zext_ln21" [main.cpp:21]   --->   Operation 53 'write' 'write_ln21' <Predicate = (!loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 54 'br' 'br_ln0' <Predicate = (!loop_read)> <Delay = 0.00>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%write_ln13 = write void @_ssdm_op_Write.axis.volatile.i8P128A, i8 %out_r, i8 %in_read_3" [main.cpp:13]   --->   Operation 55 'write' 'write_ln13' <Predicate = (loop_read)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln14 = br void" [main.cpp:14]   --->   Operation 56 'br' 'br_ln14' <Predicate = (loop_read)> <Delay = 0.00>
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%temp = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i8.i8.i8, i8 %in_read_3, i8 %in_read_2, i8 %in_read_1, i8 %in_read"   --->   Operation 60 'bitconcatenate' 'temp' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 61 [1/1] (0.00ns)   --->   "%ret_ln23 = ret i32 %temp" [main.cpp:23]   --->   Operation 61 'ret' 'ret_ln23' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %out_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %in_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 59 [1/1] (0.00ns)   --->   "%temp = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i8.i8.i8, i8 %in_read_3, i8 %in_read_2, i8 %in_read_1, i8 %in_read"   --->   Operation 59 'bitconcatenate' 'temp' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 60 [1/1] (0.00ns)   --->   "%ret_ln23 = ret i32 %temp" [main.cpp:23]   --->   Operation 60 'ret' 'ret_ln23' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -174,8 +173,9 @@ The critical path consists of the following:
  <State 2>: 0ns
 The critical path consists of the following:
 
- <State 3>: 0ns
+ <State 3>: 0.264ns
 The critical path consists of the following:
+	'select' operation ('select_ln15', main.cpp:15) [19]  (0.264 ns)
 
  <State 4>: 0ns
 The critical path consists of the following:

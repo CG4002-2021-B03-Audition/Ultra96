@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'axi_transfer'" level="0">
-<item name = "Date">Mon Feb 15 02:39:46 2021
+<item name = "Date">Tue Feb 16 00:08:22 2021
 </item>
 <item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
 <item name = "Project">CG4002</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
-<item name = "Target device">xczu3eg-sbva484-1-i</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 0 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 0.264 ns, 2.70 ns</column>
 </table>
 </item>
 </section>

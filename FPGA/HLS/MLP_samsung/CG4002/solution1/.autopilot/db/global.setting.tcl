@@ -8,12 +8,12 @@ set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
-set FloatingPointFlag 1
+set FloatingPointFlag 0
 set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 0
+set HasDSPModule 1
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
@@ -41,7 +41,7 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xczu3eg:-sbva484:-1-i
+set TargetInfo xczu3eg:-sbva484:-1-e
 set SourceFiles {sc {} c ../../main.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung/CG4002/solution1/solution1.directive

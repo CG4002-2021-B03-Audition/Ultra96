@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="mlp" name="CG4002">
+<project xmlns="com.autoesl.autopilot.project" name="CG4002" top="mlp">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

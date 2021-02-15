@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="mlp" xd:componentRef="mlp" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="in" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_r" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="out" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="10705" xd:FF="16226" xd:BRAM="481" xd:DSP="193"/>
+</xd:acceleratorMap>

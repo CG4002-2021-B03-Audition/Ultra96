@@ -31,14 +31,14 @@ void mlp(AXI_VAL* in, AXI_VAL* out) {
     #pragma HLS INTERFACE axis port=out
 	int new_input;
 	int new_weight;
+	floatA_t weights_1[561 + 64 + 64][64], weights_2[64][6], bias[64 + 64 + 64 + 6];
 
     while (1) {              //consider parallel acceleration of multiple inputs at once?
     	//Data containers
-    	float buffer_1[64], weights_1[561 + 64 + 64][64], weights_2[64][6];
-    	float bias[64 + 64 + 64 + 6];
-    	float buffer_2[64];
-    	float buffer_3[64];
-    	float buffer_4[6];
+    	floatA_t buffer_1[64];
+    	floatA_t buffer_2[64];
+    	floatA_t buffer_3[64];
+    	floatA_t buffer_4[6];
 
     	int params[2];
 
@@ -74,27 +74,20 @@ void mlp(AXI_VAL* in, AXI_VAL* out) {
 				for (int l = 0; l < 561; l++) {
 					buffer_1[k] += axi_transfer(in, out, 1, 0) * weights_1[l][k];
 				}
-			}
-			layer1_bias:for (int i = 0; i < 64; i++) {
-				buffer_1[i] += bias[i];
+				buffer_1[k] += bias[k];
 			}
 
 			layer2_loop:for (int k = 0; k < 64; k++) {
 				for (int l = 0; l < 64; l++) {
 					buffer_2[k] += buffer_1[l] * weights_1[561 + l][k];
 				}
+				buffer_2[k] += bias[64 + k];
 			}
-			layer2_bias:for (int i = 0; i < 64; i++) {
-				buffer_2[i] += bias[64 + i];
-			}
-
 			layer3_loop:for (int m = 0; m < 64; m++) {
 				for (int n = 0; n < 64; n++) {
 					buffer_3[m] += buffer_2[n] * weights_1[561 + 64 + n][m];
 				}
-			}
-			layer3_bias:for (int i = 0; i < 64; i++) {
-				buffer_3[i] += bias[64 + 64 + i];
+				buffer_3[m] += bias[64 + 64 + m];
 			}
 
 			layer4_loop:for (int o = 0; o < 6; o++) {

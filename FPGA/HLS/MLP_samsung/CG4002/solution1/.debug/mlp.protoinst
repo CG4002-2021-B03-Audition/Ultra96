@@ -3,7 +3,7 @@
 	"modules": {
 		"mlp": {
 			"proto_instances": {
-				"grp_axi_transfer_fu_4076/grp_axi_transfer_fu_4076_activity": {
+				"grp_axi_transfer_fu_4024/grp_axi_transfer_fu_4024_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

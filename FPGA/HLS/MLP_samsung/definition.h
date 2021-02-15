@@ -1,6 +1,6 @@
 #include "ap_fixed.h"
 
-#define FLOAT_WIDTH 24
+#define FLOAT_WIDTH 12
 #define INT_WIDTH 4
 
 typedef ap_fixed<FLOAT_WIDTH, INT_WIDTH> floatA_t;

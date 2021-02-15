@@ -14,13 +14,13 @@ set C_modelType { int 32 }
 set C_modelArgList {
 	{ in_r int 8 regular {axi_s 0 volatile  { in_r Data } }  }
 	{ out_r int 8 regular {axi_s 1 volatile  { out_r Data } }  }
-	{ value_r int 32 regular  }
+	{ value_r int 4 regular  }
 	{ loop_r int 1 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "in_r", "interface" : "axis", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "out_r", "interface" : "axis", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "value_r", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "value_r", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "loop_r", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
@@ -39,7 +39,7 @@ set portList {
 	{ in_r_TREADY sc_out sc_logic 1 inacc 0 } 
 	{ out_r_TDATA sc_out sc_lv 8 signal 1 } 
 	{ out_r_TVALID sc_out sc_logic 1 outvld 1 } 
-	{ value_r sc_in sc_lv 32 signal 2 } 
+	{ value_r sc_in sc_lv 4 signal 2 } 
 	{ loop_r sc_in sc_lv 1 signal 3 } 
 	{ ap_return sc_out sc_lv 32 signal -1 } 
 	{ in_r_TDATA_blk_n sc_out sc_logic 1 signal -1 } 
@@ -59,7 +59,7 @@ set NewPortList {[
  	{ "name": "in_r_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "in_r", "role": "TREADY" }} , 
  	{ "name": "out_r_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "out_r", "role": "TDATA" }} , 
  	{ "name": "out_r_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "out_r", "role": "TVALID" }} , 
- 	{ "name": "value_r", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "value_r", "role": "default" }} , 
+ 	{ "name": "value_r", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "value_r", "role": "default" }} , 
  	{ "name": "loop_r", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "loop_r", "role": "default" }} , 
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }} , 
  	{ "name": "in_r_TDATA_blk_n", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in_r_TDATA_blk_n", "role": "default" }} , 
@@ -111,6 +111,6 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	in_r { axis {  { in_r_TVALID in_vld 0 1 }  { in_r_TDATA in_data 0 8 }  { in_r_TREADY in_acc 1 1 } } }
 	out_r { axis {  { out_r_TREADY out_acc 0 1 }  { out_r_TDATA out_data 1 8 }  { out_r_TVALID out_vld 1 1 } } }
-	value_r { ap_none {  { value_r in_data 0 32 } } }
+	value_r { ap_none {  { value_r in_data 0 4 } } }
 	loop_r { ap_none {  { loop_r in_data 0 1 } } }
 }
