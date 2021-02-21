@@ -1,0 +1,121 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Feb 21 19:29:07 2021
+| Host         : MOONCELL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102211657) to (Rev. 2102211926)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Feb 21 16:59:12 2021
+| Host         : MOONCELL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102210104) to (Rev. 2102211657)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Feb 21 01:04:23 2021
+| Host         : MOONCELL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102202320) to (Rev. 2102210104)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Feb 20 23:21:00 2021
+| Host         : MOONCELL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102202313) to (Rev. 2102202320)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Feb 20 23:18:02 2021
+| Host         : MOONCELL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102202257) to (Rev. 2102202313)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Feb 20 23:00:06 2021
+| Host         : MOONCELL running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dance_HLS_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_dance_HLS_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102201747) to (Rev. 2102202257)
+

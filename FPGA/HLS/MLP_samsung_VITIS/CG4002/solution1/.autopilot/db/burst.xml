@@ -1,0 +1,9 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="main.cpp:55:14" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb5.load.0" VarName="weights_0"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="main.cpp:52:15" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb4.load.3" VarName="weights_0"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="main.cpp:49:17" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb2.store.9" VarName="weights_0"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="main.cpp:49:17" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb2.store.9" VarName="weights_0"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="main.cpp:52:15" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb4.load.3" VarName="weights_0"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="" msg_id="214-252" msg_severity="INFO" msg_body="Cannot analyze the loop bounds of 'anonymous'" resolution="214-252"/>
+</VitisHLS:BurstInfo>
+
