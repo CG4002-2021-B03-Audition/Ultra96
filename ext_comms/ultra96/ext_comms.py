@@ -23,6 +23,11 @@ class ext_comms():
         self.secret_key_string = secret_key_string
 
 
+    def recv_pos(self):
+        recv_msg = self.eval_conn.recv(1024)
+        print(recv_msg)
+
+
     """
     pos is a tuple (x,x,x)
     """
@@ -50,5 +55,6 @@ class ext_comms():
 
 
     def send_to_ext(self, pos, action, sync_delay): # More params can be put in here
+        print(f"Positions: {pos} | Action: {action} | Delay: {sync_delay}")
         self.send_to_eval(pos, action, sync_delay)
         self.send_to_dashb()

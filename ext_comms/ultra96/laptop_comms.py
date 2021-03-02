@@ -50,7 +50,7 @@ class laptop_comms():
                 # Connection to laptop closed
                 break
             else:
-                print(f"Data received from laptop idx {laptop_idx}, {laptop_conn.getpeername()}")
+                #print(f"Data received from laptop idx {laptop_idx}, {laptop_conn.getpeername()}")
                 # Put message in queue if it is not full
                 if laptop_queue.full():
                     pass # Handle queue overflow TODO

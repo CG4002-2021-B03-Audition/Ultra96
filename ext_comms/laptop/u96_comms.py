@@ -11,8 +11,6 @@ class u96_comms():
         self.u96_conn.connect((ip, port))
 
     def send_data(self, send_buf):     
-        
-        
         self.u96_conn.send(bytes(send_buf))
 
     

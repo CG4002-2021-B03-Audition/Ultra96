@@ -35,7 +35,6 @@ class dummy_ble(ble_comms):
         beetle_rx_time = self.millis()
         time.sleep(self.beetle_remote_oper_time/100) # Simulate remote operation time
         beetle_tx_time = self.millis()
-        print(beetle_rx_time, beetle_tx_time)
 
         offset_pkt = []
         offset_pkt.append(0)
@@ -52,6 +51,8 @@ class dummy_ble(ble_comms):
 
 
     def create_data_pkt(self):
+        input()
+        
         beetle_timestamp = self.millis()
         time.sleep(self.beetle_remote_oper_time/100) # Simulate remote operation time
 
@@ -105,6 +106,7 @@ class dummy_ble(ble_comms):
             # Hence, 3 seconds instead of like 1 second above.
             def x():
                 self.can_send_data_pkt = True
+                print("Ready to send!")
             t = threading.Timer(3, x)
             t.start()
 

@@ -17,9 +17,9 @@ import pandas as pd
 from Crypto.Cipher import AES
 
 # Week 13 test: 8 moves, so 33 in total = (8*4) + 1 (logout)
-#ACTIONS = ['zigzag', 'rocket', 'hair', 'pushback', 'windowwipe', 'elbowlock', 'scarecrow', 'shouldershrug']
-# Week 9 and 10 tests: 3 moves, repeated 4 times each = 12 moves.
-ACTIONS = ['zigzag', 'rocket', 'hair']
+#ACTIONS = ['gun', 'sidepump', 'hair', 'pointhigh', 'elbowkick', 'listen', 'dab', 'wipetable']
+# Week 9 and 11 tests: 3 moves, repeated 4 times each = 12 moves.
+ACTIONS = ['gun', 'sidepump', 'hair']
 POSITIONS = ['1 2 3', '3 2 1', '2 3 1', '3 1 2', '1 3 2', '2 1 3']
 LOG_DIR = os.path.join(os.path.dirname(__file__), 'evaluation_logs')
 NUM_MOVE_PER_ACTION = 4
@@ -54,7 +54,7 @@ class Server(threading.Thread):
         self.action_set_time = None
 
         self.idx = 0
-        self.timeout = 60
+        self.timeout = 30 #60
         self.has_no_response = False
         self.connection = None
         self.timer = None
@@ -222,7 +222,7 @@ def main():
 
     if len(sys.argv) != 4:
         ip_addr = "127.0.0.1"
-        port_num = 3000
+        port_num = 4000
         group_id = "3"
         #print('Invalid number of arguments')
         #print('python server.py [IP address] [Port] [groupID]')
