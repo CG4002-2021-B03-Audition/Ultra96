@@ -1,0 +1,10 @@
+sunfire IP
+137.132.80.55
+
+ultra96 IP
+137.132.86.226
+
+ssh -t -i .ssh/id_rsa -L 6666:127.0.0.1:6667 raghavb@sunfire.comp.nus.edu.sg "ssh -t -i .ssh/id_rsa -L 6667:137.132.86.226.12345 xilinx@137.132.86.226 'bash -l'; bash -l"
+ssh -t -i .ssh/id_rsa -L 6666:127.0.0.1:6667 raghavb@sunfire.comp.nus.edu.sg "ssh -t -i .ssh/id_rsa -L 6667:137.132.86.226.12345 xilinx@137.132.86.226 'bash -l'; bash -l"
+
+ssh -t -i .ssh/id_rsa -L 6666:127.0.0.1:6667 raghavb@sunfire.comp.nus.edu.sg "sh start.sh && ssh -t -i .ssh/id_rsa -L 6667:137.132.86.226:12345 xilinx@137.132.86.226 'bash -l'; bash -l"
