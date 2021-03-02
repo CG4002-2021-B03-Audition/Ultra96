@@ -1,0 +1,13 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="10" filename="main.cpp" linenumber="18" name="weights_0" contextFuncName="mlp" moduleName="mlp" rtlName="weights_0_U" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="20" filename="main.cpp" linenumber="22" name="icmp_ln22" contextFuncName="mlp" moduleName="mlp" rtlName="icmp_ln22_fu_133_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="22" filename="main.cpp" linenumber="22" name="j" contextFuncName="mlp" moduleName="mlp" rtlName="j_fu_139_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="28" filename="main.cpp" linenumber="24" name="zext_ln24" contextFuncName="mlp" moduleName="mlp" rtlName="zext_ln24_fu_150_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="37" filename="main.cpp" linenumber="26" name="icmp_ln26" contextFuncName="mlp" moduleName="mlp" rtlName="icmp_ln26_fu_155_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="39" filename="main.cpp" linenumber="26" name="j_1" contextFuncName="mlp" moduleName="mlp" rtlName="j_1_fu_161_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="43" filename="main.cpp" linenumber="27" name="zext_ln27" contextFuncName="mlp" moduleName="mlp" rtlName="zext_ln27_fu_167_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="46" filename="main.cpp" linenumber="28" name="icmp_ln28" contextFuncName="mlp" moduleName="mlp" rtlName="icmp_ln28_fu_172_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<item  id="47" filename="main.cpp" linenumber="28" name="tmp_last" contextFuncName="mlp" moduleName="mlp" rtlName="tmp_last_fu_178_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="F:\CNNproj\Ultra96\FPGA\HLS\MLP_samsung_Vivado"><\/item>
+<\/annotationInfo>
+</annotationInfo>

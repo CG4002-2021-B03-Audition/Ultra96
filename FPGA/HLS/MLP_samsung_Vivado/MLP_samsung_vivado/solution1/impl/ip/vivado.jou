@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Feb 21 19:26:17 2021
+# Process ID: 12664
+# Current directory: F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/impl/ip/vivado.log
+# Journal file: F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

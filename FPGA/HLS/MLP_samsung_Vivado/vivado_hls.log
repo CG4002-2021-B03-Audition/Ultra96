@@ -1,0 +1,24 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Chua Zong Wei' on host 'mooncell' (Windows NT_amd64 version 6.2) on Sun Feb 21 19:26:14 +0800 2021
+INFO: [HLS 200-10] In directory 'F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado'
+Sourcing Tcl script 'F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/export.tcl'
+INFO: [HLS 200-10] Opening project 'F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado'.
+INFO: [HLS 200-10] Opening solution 'F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 21 19:26:21 2021...

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (main.cpp:22:27) in function 'mlp' is an infinite loop." projectName="MLP_samsung_vivado" solutionName="solution1" date="2021-02-21T19:21:03.084+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from main.cpp:1:&#xD;&#xA;main.cpp:7:12: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]&#xD;&#xA; bool last = false;&#xD;&#xA;           ^&#xD;&#xA;1 warning generated." projectName="MLP_samsung_vivado" solutionName="solution1" date="2021-02-21T19:21:02.159+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="MLP_samsung_vivado" solutionName="solution1" date="2021-02-21T19:20:52.077+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="MLP_samsung_vivado" solutionName="solution1" date="2021-02-21T19:20:52.050+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
