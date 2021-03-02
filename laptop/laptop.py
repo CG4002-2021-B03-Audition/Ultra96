@@ -1,7 +1,7 @@
 import sys
 import time
 from dummy_ble import dummy_ble
-from u96_conn import u96_conn
+from u96_comms import u96_comms
 
 DEFAULT_U96_IP = "127.0.0.1"
 DEFAULT_U96_PORT = 3000
@@ -36,8 +36,8 @@ def calc_offset(num_to_avg):
     for i in range(0, num_to_avg):
         offset_pkt, laptop_tx_time = create_offset_pkt()
         
-        beetle.send_data(offset_pkt)
-        recv_pkt = bytearray(beetle.recv_data()) # Busy waits for beetle to send data back
+        beetle_conn.send_data(offset_pkt)
+        recv_pkt = bytearray(beetle_conn.recv_data()) # Busy waits for beetle to send data back
         # TODO Check if wrong packet is received
         
         beetle_rx_time = int.from_bytes(recv_pkt[1:5], "big")
@@ -73,20 +73,22 @@ if __name__ == "__main__":
         u96_ip = input("Enter Ultra96 IP:\n")
         u96_port = int(input("Enter Ultra96 Port:\n"))
     
-    u96 = u96_conn(u96_ip, u96_port) 
-    beetle = dummy_ble(BLE_DATA_SIZE)
+    u96_conn = u96_comms(u96_ip, u96_port) 
+    beetle_conn = dummy_ble(BLE_DATA_SIZE)
 
     OFFSET = calc_offset(5)
     print(f"Final offset value: {OFFSET}")
     
     # Send beetle the ready signal
-    beetle.send_data([PKT_TYPE["ready_for_data"]])
+    beetle_conn.send_data([PKT_TYPE["ready_for_data"]])
 
     # Start thread that waits for data packet from 
     for i in range(0, 10): # Receive 10 data packets
-        data_pkt = beetle.recv_data()
+        data_pkt = beetle_conn.recv_data()
         print(data_pkt)
         # Need to add 
+
+        u96_conn.send_data(data_pkt)
 
     # Send data packet to ultra 96
 

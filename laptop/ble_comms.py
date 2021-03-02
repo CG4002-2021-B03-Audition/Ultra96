@@ -1,8 +1,6 @@
 import time
 
-
-
-class ble_conn():
+class ble_comms():
     def __init__(self, recv_data_len):
         self.recv_data_len = recv_data_len
         self.has_move_started = False

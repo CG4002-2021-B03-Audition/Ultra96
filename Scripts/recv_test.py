@@ -60,8 +60,6 @@ if __name__ == "__main__":
 
             print(f"Current number of connections: {num_conns}")
 
-    #except KeyboardInterrupt:
-    #    pass
 
     print("Quitting!")
     recv_socket.close()

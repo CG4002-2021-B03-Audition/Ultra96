@@ -2,9 +2,9 @@ import time
 import random
 import numpy as np
 import threading
-from ble_conn import ble_conn
+from ble_comms import ble_comms
 
-class dummy_ble(ble_conn):
+class dummy_ble(ble_comms):
     def __init__(self, recv_data_len):
         #super().__init__(recv_data_len)
         print("Starting connection to beetle...")
