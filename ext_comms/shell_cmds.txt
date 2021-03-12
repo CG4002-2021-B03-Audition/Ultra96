@@ -1,9 +1,0 @@
-# On ONE laptop alone, run the command below.
-ssh -t -L 3000:127.0.0.1:12347 raghavb@sunfire.comp.nus.edu.sg "ssh -N -L 12347:127.0.0.1:3000 xilinx@137.132.86.226"
-
-#On the other two laptops, run this command first
-ssh -N -L 3000:127.0.0.1:12347 raghavb@sunfire.comp.nus.edu.sg
-
-ssh -t -J raghavb@sunfire.comp.nus.edu.sg xilinx@137.132.86.226 "python client.py"
-
-ssh -J raghavb@sunfire.comp.nus.edu.sg xilinx@137.132.86.226
