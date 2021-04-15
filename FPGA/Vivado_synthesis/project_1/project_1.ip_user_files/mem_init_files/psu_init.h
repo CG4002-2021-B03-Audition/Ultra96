@@ -45,8 +45,6 @@
 #define CRL_APB_IOPLL_CTRL_OFFSET                                                  0XFF5E0020
 #undef CRL_APB_IOPLL_TO_FPD_CTRL_OFFSET 
 #define CRL_APB_IOPLL_TO_FPD_CTRL_OFFSET                                           0XFF5E0044
-#undef CRL_APB_IOPLL_FRAC_CFG_OFFSET 
-#define CRL_APB_IOPLL_FRAC_CFG_OFFSET                                              0XFF5E0028
 #undef CRF_APB_APLL_CFG_OFFSET 
 #define CRF_APB_APLL_CFG_OFFSET                                                    0XFD1A0024
 #undef CRF_APB_APLL_CTRL_OFFSET 
@@ -61,8 +59,6 @@
 #define CRF_APB_APLL_CTRL_OFFSET                                                   0XFD1A0020
 #undef CRF_APB_APLL_TO_LPD_CTRL_OFFSET 
 #define CRF_APB_APLL_TO_LPD_CTRL_OFFSET                                            0XFD1A0048
-#undef CRF_APB_APLL_FRAC_CFG_OFFSET 
-#define CRF_APB_APLL_FRAC_CFG_OFFSET                                               0XFD1A0028
 #undef CRF_APB_DPLL_CFG_OFFSET 
 #define CRF_APB_DPLL_CFG_OFFSET                                                    0XFD1A0030
 #undef CRF_APB_DPLL_CTRL_OFFSET 
@@ -77,8 +73,6 @@
 #define CRF_APB_DPLL_CTRL_OFFSET                                                   0XFD1A002C
 #undef CRF_APB_DPLL_TO_LPD_CTRL_OFFSET 
 #define CRF_APB_DPLL_TO_LPD_CTRL_OFFSET                                            0XFD1A004C
-#undef CRF_APB_DPLL_FRAC_CFG_OFFSET 
-#define CRF_APB_DPLL_FRAC_CFG_OFFSET                                               0XFD1A0034
 #undef CRF_APB_VPLL_CFG_OFFSET 
 #define CRF_APB_VPLL_CFG_OFFSET                                                    0XFD1A003C
 #undef CRF_APB_VPLL_CTRL_OFFSET 
@@ -465,28 +459,6 @@
 #define CRL_APB_IOPLL_TO_FPD_CTRL_DIVISOR0_MASK                0x00003F00U
 
 /*
-* Fractional SDM bypass control. When 0, PLL is in integer mode and it ign
-    * ores all fractional data. When 1, PLL is in fractional mode and uses DAT
-    * A of this register for the fractional portion of the feedback divider.
-*/
-#undef CRL_APB_IOPLL_FRAC_CFG_ENABLED_DEFVAL 
-#undef CRL_APB_IOPLL_FRAC_CFG_ENABLED_SHIFT 
-#undef CRL_APB_IOPLL_FRAC_CFG_ENABLED_MASK 
-#define CRL_APB_IOPLL_FRAC_CFG_ENABLED_DEFVAL                  0x00000000
-#define CRL_APB_IOPLL_FRAC_CFG_ENABLED_SHIFT                   31
-#define CRL_APB_IOPLL_FRAC_CFG_ENABLED_MASK                    0x80000000U
-
-/*
-* Fractional value for the Feedback value.
-*/
-#undef CRL_APB_IOPLL_FRAC_CFG_DATA_DEFVAL 
-#undef CRL_APB_IOPLL_FRAC_CFG_DATA_SHIFT 
-#undef CRL_APB_IOPLL_FRAC_CFG_DATA_MASK 
-#define CRL_APB_IOPLL_FRAC_CFG_DATA_DEFVAL                     0x00000000
-#define CRL_APB_IOPLL_FRAC_CFG_DATA_SHIFT                      0
-#define CRL_APB_IOPLL_FRAC_CFG_DATA_MASK                       0x0000FFFFU
-
-/*
 * PLL loop filter resistor control
 */
 #undef CRF_APB_APLL_CFG_RES_DEFVAL 
@@ -639,28 +611,6 @@
 #define CRF_APB_APLL_TO_LPD_CTRL_DIVISOR0_MASK                 0x00003F00U
 
 /*
-* Fractional SDM bypass control. When 0, PLL is in integer mode and it ign
-    * ores all fractional data. When 1, PLL is in fractional mode and uses DAT
-    * A of this register for the fractional portion of the feedback divider.
-*/
-#undef CRF_APB_APLL_FRAC_CFG_ENABLED_DEFVAL 
-#undef CRF_APB_APLL_FRAC_CFG_ENABLED_SHIFT 
-#undef CRF_APB_APLL_FRAC_CFG_ENABLED_MASK 
-#define CRF_APB_APLL_FRAC_CFG_ENABLED_DEFVAL                   0x00000000
-#define CRF_APB_APLL_FRAC_CFG_ENABLED_SHIFT                    31
-#define CRF_APB_APLL_FRAC_CFG_ENABLED_MASK                     0x80000000U
-
-/*
-* Fractional value for the Feedback value.
-*/
-#undef CRF_APB_APLL_FRAC_CFG_DATA_DEFVAL 
-#undef CRF_APB_APLL_FRAC_CFG_DATA_SHIFT 
-#undef CRF_APB_APLL_FRAC_CFG_DATA_MASK 
-#define CRF_APB_APLL_FRAC_CFG_DATA_DEFVAL                      0x00000000
-#define CRF_APB_APLL_FRAC_CFG_DATA_SHIFT                       0
-#define CRF_APB_APLL_FRAC_CFG_DATA_MASK                        0x0000FFFFU
-
-/*
 * PLL loop filter resistor control
 */
 #undef CRF_APB_DPLL_CFG_RES_DEFVAL 
@@ -811,28 +761,6 @@
 #define CRF_APB_DPLL_TO_LPD_CTRL_DIVISOR0_DEFVAL               0x00000400
 #define CRF_APB_DPLL_TO_LPD_CTRL_DIVISOR0_SHIFT                8
 #define CRF_APB_DPLL_TO_LPD_CTRL_DIVISOR0_MASK                 0x00003F00U
-
-/*
-* Fractional SDM bypass control. When 0, PLL is in integer mode and it ign
-    * ores all fractional data. When 1, PLL is in fractional mode and uses DAT
-    * A of this register for the fractional portion of the feedback divider.
-*/
-#undef CRF_APB_DPLL_FRAC_CFG_ENABLED_DEFVAL 
-#undef CRF_APB_DPLL_FRAC_CFG_ENABLED_SHIFT 
-#undef CRF_APB_DPLL_FRAC_CFG_ENABLED_MASK 
-#define CRF_APB_DPLL_FRAC_CFG_ENABLED_DEFVAL                   0x00000000
-#define CRF_APB_DPLL_FRAC_CFG_ENABLED_SHIFT                    31
-#define CRF_APB_DPLL_FRAC_CFG_ENABLED_MASK                     0x80000000U
-
-/*
-* Fractional value for the Feedback value.
-*/
-#undef CRF_APB_DPLL_FRAC_CFG_DATA_DEFVAL 
-#undef CRF_APB_DPLL_FRAC_CFG_DATA_SHIFT 
-#undef CRF_APB_DPLL_FRAC_CFG_DATA_MASK 
-#define CRF_APB_DPLL_FRAC_CFG_DATA_DEFVAL                      0x00000000
-#define CRF_APB_DPLL_FRAC_CFG_DATA_SHIFT                       0
-#define CRF_APB_DPLL_FRAC_CFG_DATA_MASK                        0x0000FFFFU
 
 /*
 * PLL loop filter resistor control
@@ -37689,8 +37617,12 @@
 #define CRF_APB_RST_FPD_TOP_OFFSET                                                 0XFD1A0100
 #undef CRL_APB_RST_LPD_TOP_OFFSET 
 #define CRL_APB_RST_LPD_TOP_OFFSET                                                 0XFF5E023C
-#undef FPD_SLCR_AFI_FS_OFFSET 
-#define FPD_SLCR_AFI_FS_OFFSET                                                     0XFD615000
+#undef LPD_SLCR_AFI_FS_OFFSET 
+#define LPD_SLCR_AFI_FS_OFFSET                                                     0XFF419000
+#undef AFIFM6_AFIFM_RDCTRL_OFFSET 
+#define AFIFM6_AFIFM_RDCTRL_OFFSET                                                 0XFF9B0000
+#undef AFIFM6_AFIFM_WRCTRL_OFFSET 
+#define AFIFM6_AFIFM_WRCTRL_OFFSET                                                 0XFF9B0014
 
 /*
 * AF_FM0 block level reset
@@ -37767,24 +37699,34 @@
     *  AXI data width (default) 01: 64-bit AXI data width 10: 128-bit AXI data
     *  width 11: reserved
 */
-#undef FPD_SLCR_AFI_FS_DW_SS0_SEL_DEFVAL 
-#undef FPD_SLCR_AFI_FS_DW_SS0_SEL_SHIFT 
-#undef FPD_SLCR_AFI_FS_DW_SS0_SEL_MASK 
-#define FPD_SLCR_AFI_FS_DW_SS0_SEL_DEFVAL                      0x00000A00
-#define FPD_SLCR_AFI_FS_DW_SS0_SEL_SHIFT                       8
-#define FPD_SLCR_AFI_FS_DW_SS0_SEL_MASK                        0x00000300U
+#undef LPD_SLCR_AFI_FS_DW_SS2_SEL_DEFVAL 
+#undef LPD_SLCR_AFI_FS_DW_SS2_SEL_SHIFT 
+#undef LPD_SLCR_AFI_FS_DW_SS2_SEL_MASK 
+#define LPD_SLCR_AFI_FS_DW_SS2_SEL_DEFVAL                      0x00000200
+#define LPD_SLCR_AFI_FS_DW_SS2_SEL_SHIFT                       8
+#define LPD_SLCR_AFI_FS_DW_SS2_SEL_MASK                        0x00000300U
 
 /*
-* Select the 32/64/128-bit data width selection for the Slave 1 00: 32-bit
-    *  AXI data width (default) 01: 64-bit AXI data width 10: 128-bit AXI data
-    *  width 11: reserved
+* Configures the Read Channel Fabric interface width. 2'b11 : Reserved 2'b
+    * 10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
 */
-#undef FPD_SLCR_AFI_FS_DW_SS1_SEL_DEFVAL 
-#undef FPD_SLCR_AFI_FS_DW_SS1_SEL_SHIFT 
-#undef FPD_SLCR_AFI_FS_DW_SS1_SEL_MASK 
-#define FPD_SLCR_AFI_FS_DW_SS1_SEL_DEFVAL                      0x00000A00
-#define FPD_SLCR_AFI_FS_DW_SS1_SEL_SHIFT                       10
-#define FPD_SLCR_AFI_FS_DW_SS1_SEL_MASK                        0x00000C00U
+#undef AFIFM6_AFIFM_RDCTRL_FABRIC_WIDTH_DEFVAL 
+#undef AFIFM6_AFIFM_RDCTRL_FABRIC_WIDTH_SHIFT 
+#undef AFIFM6_AFIFM_RDCTRL_FABRIC_WIDTH_MASK 
+#define AFIFM6_AFIFM_RDCTRL_FABRIC_WIDTH_DEFVAL                0x000003B0
+#define AFIFM6_AFIFM_RDCTRL_FABRIC_WIDTH_SHIFT                 0
+#define AFIFM6_AFIFM_RDCTRL_FABRIC_WIDTH_MASK                  0x00000003U
+
+/*
+* Configures the Write Channel Fabric interface width. 2'b11 : Reserved 2'
+    * b10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
+*/
+#undef AFIFM6_AFIFM_WRCTRL_FABRIC_WIDTH_DEFVAL 
+#undef AFIFM6_AFIFM_WRCTRL_FABRIC_WIDTH_SHIFT 
+#undef AFIFM6_AFIFM_WRCTRL_FABRIC_WIDTH_MASK 
+#define AFIFM6_AFIFM_WRCTRL_FABRIC_WIDTH_DEFVAL                0x000003B0
+#define AFIFM6_AFIFM_WRCTRL_FABRIC_WIDTH_SHIFT                 0
+#define AFIFM6_AFIFM_WRCTRL_FABRIC_WIDTH_MASK                  0x00000003U
 #undef GPIO_MASK_DATA_5_MSW_OFFSET 
 #define GPIO_MASK_DATA_5_MSW_OFFSET                                                0XFF0A002C
 #undef GPIO_DIRM_5_OFFSET 

@@ -5,9 +5,10 @@
 ############################################################
 open_project MLP_samsung_vivado
 set_top mlp
+add_files math_functions.h
 add_files main.cpp
 add_files definition.h
-add_files -tb MLP_samsung_vivado/testing
+add_files -tb MLP_samsung_vivado/testing -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xczu3eg-sbva484-1-i}
 create_clock -period 10 -name default

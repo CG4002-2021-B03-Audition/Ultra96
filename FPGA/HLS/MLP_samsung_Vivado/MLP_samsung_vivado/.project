@@ -29,47 +29,52 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/.apc/.src</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/.apc/.tb</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/.tcls</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/definition.h</name>
 			<type>1</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/definition.h</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/definition.h</location>
 		</link>
 		<link>
 			<name>source/main.cpp</name>
 			<type>1</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/main.cpp</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/main.cpp</location>
+		</link>
+		<link>
+			<name>source/math_functions.h</name>
+			<type>1</type>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/math_functions.h</location>
 		</link>
 		<link>
 			<name>testbench/testing</name>
 			<type>1</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/testing</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/testing</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/solution1.directive</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/directives.tcl</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/script.tcl</location>
+			<location>C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

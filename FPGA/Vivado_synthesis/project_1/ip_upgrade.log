@@ -1,6 +1,552 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Apr  9 14:21:47 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2104082328) to (Rev. 2104091421)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Apr  8 23:28:33 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2104082203) to (Rev. 2104082328)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Thu Apr  8 22:11:01 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103302100) to (Rev. 2104082203)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Mar 30 21:01:26 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140321) to (Rev. 2103302100)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 03:22:13 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140312) to (Rev. 2103140321)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 03:12:33 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140258) to (Rev. 2103140312)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 02:59:11 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140242) to (Rev. 2103140258)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 02:42:21 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140231) to (Rev. 2103140242)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 02:31:53 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140220) to (Rev. 2103140231)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 02:21:18 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140155) to (Rev. 2103140220)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 01:55:51 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140142) to (Rev. 2103140155)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 01:43:02 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140119) to (Rev. 2103140142)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 01:19:34 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140037) to (Rev. 2103140119)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 00:39:51 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103140002) to (Rev. 2103140037)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Mar 14 00:05:19 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103132314) to (Rev. 2103140002)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Mar 13 23:15:12 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103132021) to (Rev. 2103132314)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Mar 13 22:12:05 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mlp_dance3_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_mlp_dance3_0_0 (xilinx.com:hls:mlp_dance3:1.0) from (Rev. 2103131336) to (Rev. 2103132021)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Feb 24 19:33:23 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102241656) to (Rev. 2102241932)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Wed Feb 24 16:57:38 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102221513) to (Rev. 2102241656)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Feb 22 15:14:21 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102221242) to (Rev. 2102221513)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Feb 22 12:42:44 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102221232) to (Rev. 2102221242)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Feb 22 12:33:33 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102221154) to (Rev. 2102221232)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Feb 22 11:55:14 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102221132) to (Rev. 2102221154)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Feb 22 11:32:36 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102221109) to (Rev. 2102221132)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Feb 22 11:11:21 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102220303) to (Rev. 2102221109)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Mon Feb 22 03:05:03 2021
+| Host         : Fractalisk running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-i
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_MLP_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_MLP_0 (xilinx.com:hls:mlp:1.0) from (Rev. 2102211926) to (Rev. 2102220303)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 | Date         : Sun Feb 21 19:29:07 2021
 | Host         : MOONCELL running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

@@ -19,8 +19,8 @@ using namespace sc_dt;
 struct mlp_weights_0_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 32;
-  static const unsigned AddressRange = 561;
-  static const unsigned AddressWidth = 10;
+  static const unsigned AddressRange = 36864;
+  static const unsigned AddressWidth = 16;
 
 //latency = 1
 //input_reg = 1
@@ -30,6 +30,9 @@ sc_core::sc_in <sc_logic> ce0;
 sc_core::sc_out <sc_lv<DataWidth> > q0;
 sc_core::sc_in<sc_logic> we0;
 sc_core::sc_in<sc_lv<DataWidth> > d0;
+sc_core::sc_in <sc_lv<AddressWidth> > address1;
+sc_core::sc_in <sc_logic> ce1;
+sc_core::sc_out <sc_lv<DataWidth> > q1;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -41,6 +44,10 @@ sc_lv<DataWidth> ram[AddressRange];
 
 
 SC_METHOD(prc_write_0);
+  sensitive<<clk.pos();
+
+
+SC_METHOD(prc_write_1);
   sensitive<<clk.pos();
    }
 
@@ -69,6 +76,18 @@ void prc_write_0()
 }
 
 
+void prc_write_1()
+{
+    if (ce1.read() == sc_dt::Log_1) 
+    {
+            if(address1.read().is_01() && address1.read().to_uint()<AddressRange)
+              q1 = ram[address1.read().to_uint()];
+            else
+              q1 = sc_lv<DataWidth>();
+    }
+}
+
+
 }; //endmodule
 
 
@@ -76,14 +95,17 @@ SC_MODULE(mlp_weights_0) {
 
 
 static const unsigned DataWidth = 32;
-static const unsigned AddressRange = 561;
-static const unsigned AddressWidth = 10;
+static const unsigned AddressRange = 36864;
+static const unsigned AddressWidth = 16;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;
 sc_core::sc_out <sc_lv<DataWidth> > q0;
 sc_core::sc_in<sc_logic> we0;
 sc_core::sc_in<sc_lv<DataWidth> > d0;
+sc_core::sc_in <sc_lv<AddressWidth> > address1;
+sc_core::sc_in<sc_logic> ce1;
+sc_core::sc_out <sc_lv<DataWidth> > q1;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -99,6 +121,9 @@ meminst->q0(q0);
 meminst->we0(we0);
 meminst->d0(d0);
 
+meminst->address1(address1);
+meminst->ce1(ce1);
+meminst->q1(q1);
 
 meminst->reset(reset);
 meminst->clk(clk);

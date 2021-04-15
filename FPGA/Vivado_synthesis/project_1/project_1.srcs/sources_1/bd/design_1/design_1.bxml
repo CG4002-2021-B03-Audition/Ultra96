@@ -2,19 +2,11 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613907069"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613907069"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613907069"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613907069"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1617949351"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1617949351"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1617949351"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1617949351"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\design_1_MLP_0\design_1_MLP_0.xci" Type="IP">
-        <Instance HierarchyPath="main"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\design_1_axi_dma_0_0\design_1_axi_dma_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_dma_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -49,6 +41,14 @@
       </File>
       <File Name="ip\design_1_axi_smc_6\design_1_axi_smc_6.xci" Type="IP">
         <Instance HierarchyPath="axi_smc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_mlp_dance3_0_0\design_1_mlp_dance3_0_0.xci" Type="IP">
+        <Instance HierarchyPath="mlp_dance3_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

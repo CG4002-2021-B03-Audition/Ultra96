@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-i" LaunchTime="1613907073">
+<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-i" LaunchTime="1617949354">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
@@ -47,7 +47,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_zynq_ultra_ps_e_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_MLP_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_mlp_dance3_0_0"/>
 </GenRun>

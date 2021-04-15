@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Sun Feb 21 18:51:45 2021
+-- Date        : Sun Feb 21 18:51:44 2021
 -- Host        : MOONCELL running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               f:/CNNIOT/deeplib/alt/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_zynq_ultra_ps_e_0_0 -prefix
+--               design_1_zynq_ultra_ps_e_0_0_ design_1_zynq_ultra_ps_e_0_0_sim_netlist.vhdl
 -- Design      : design_1_zynq_ultra_ps_e_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -1584,8 +1584,6 @@ entity design_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_3_2_zynq_ultra_ps_e is
   attribute C_USE_DIFF_RW_CLK_GP6 of design_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_3_2_zynq_ultra_ps_e : entity is 0;
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_3_2_zynq_ultra_ps_e : entity is "design_1_zynq_ultra_ps_e_0_0.hwdef";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_3_2_zynq_ultra_ps_e : entity is "zynq_ultra_ps_e_v3_3_2_zynq_ultra_ps_e";
   attribute PSS_IO : string;
   attribute PSS_IO of design_1_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_3_2_zynq_ultra_ps_e : entity is "Signal Name, DiffPair Type, DiffPair Signal,Direction, Site Type, IO Standard, Drive (mA), Slew Rate, Pull Type, IBIS Model, ODT, OUTPUT_IMPEDANCE " & LF &
  "UART1_TXD, , , OUT, PS_MIO0_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  " & LF &

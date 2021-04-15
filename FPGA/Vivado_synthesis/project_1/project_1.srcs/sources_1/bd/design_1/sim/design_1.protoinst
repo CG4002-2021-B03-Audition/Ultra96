@@ -177,7 +177,7 @@
 						"WVALID": { "actual": "S01_AXI_wvalid"}
 					}
 				},
-				"/main/M_AXIS": {
+				"/mlp_dance3_0/M_AXIS": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "ap_clk"},
@@ -188,7 +188,7 @@
 						"TVALID": { "actual": "M_AXIS_TVALID"}
 					}
 				},
-				"/main/S_AXIS": {
+				"/mlp_dance3_0/S_AXIS": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "ap_clk"},

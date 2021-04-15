@@ -1,23 +1,19 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-//Date        : Sun Feb 21 19:31:03 2021
-//Host        : MOONCELL running 64-bit major release  (build 9200)
+//Date        : Fri Apr  9 14:22:25 2021
+//Host        : Fractalisk running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=22,da_clkrst_cnt=1,da_zynq_ultra_ps_e_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=22,da_clkrst_cnt=2,da_zynq_ultra_ps_e_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    ();
 
   wire [0:0]ARESETN_1;
-  wire [31:0]MLP_M_AXIS_TDATA;
-  wire [0:0]MLP_M_AXIS_TLAST;
-  wire MLP_M_AXIS_TREADY;
-  wire MLP_M_AXIS_TVALID;
   wire [31:0]axi_dma_0_M_AXIS_MM2S_TDATA;
   wire axi_dma_0_M_AXIS_MM2S_TLAST;
   wire axi_dma_0_M_AXIS_MM2S_TREADY;
@@ -84,6 +80,10 @@ module design_1
   wire axi_smc_M00_AXI_WREADY;
   wire [3:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
+  wire [31:0]mlp_dance3_0_M_AXIS_TDATA;
+  wire [0:0]mlp_dance3_0_M_AXIS_TLAST;
+  wire mlp_dance3_0_M_AXIS_TREADY;
+  wire mlp_dance3_0_M_AXIS_TVALID;
   wire [39:0]ps8_0_axi_periph_M00_AXI_ARADDR;
   wire ps8_0_axi_periph_M00_AXI_ARREADY;
   wire ps8_0_axi_periph_M00_AXI_ARVALID;
@@ -194,11 +194,11 @@ module design_1
         .s_axi_lite_wdata(ps8_0_axi_periph_M00_AXI_WDATA),
         .s_axi_lite_wready(ps8_0_axi_periph_M00_AXI_WREADY),
         .s_axi_lite_wvalid(ps8_0_axi_periph_M00_AXI_WVALID),
-        .s_axis_s2mm_tdata(MLP_M_AXIS_TDATA),
+        .s_axis_s2mm_tdata(mlp_dance3_0_M_AXIS_TDATA),
         .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1,1'b1}),
-        .s_axis_s2mm_tlast(MLP_M_AXIS_TLAST),
-        .s_axis_s2mm_tready(MLP_M_AXIS_TREADY),
-        .s_axis_s2mm_tvalid(MLP_M_AXIS_TVALID));
+        .s_axis_s2mm_tlast(mlp_dance3_0_M_AXIS_TLAST),
+        .s_axis_s2mm_tready(mlp_dance3_0_M_AXIS_TREADY),
+        .s_axis_s2mm_tvalid(mlp_dance3_0_M_AXIS_TVALID));
   design_1_axi_smc_6 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
@@ -268,11 +268,11 @@ module design_1
         .S01_AXI_wvalid(axi_dma_0_M_AXI_S2MM_WVALID),
         .aclk(zynq_ultra_ps_e_0_pl_clk0),
         .aresetn(ARESETN_1));
-  design_1_MLP_0 main
-       (.M_AXIS_TDATA(MLP_M_AXIS_TDATA),
-        .M_AXIS_TLAST(MLP_M_AXIS_TLAST),
-        .M_AXIS_TREADY(MLP_M_AXIS_TREADY),
-        .M_AXIS_TVALID(MLP_M_AXIS_TVALID),
+  design_1_mlp_dance3_0_0 mlp_dance3_0
+       (.M_AXIS_TDATA(mlp_dance3_0_M_AXIS_TDATA),
+        .M_AXIS_TLAST(mlp_dance3_0_M_AXIS_TLAST),
+        .M_AXIS_TREADY(mlp_dance3_0_M_AXIS_TREADY),
+        .M_AXIS_TVALID(mlp_dance3_0_M_AXIS_TVALID),
         .S_AXIS_TDATA(axi_dma_0_M_AXIS_MM2S_TDATA),
         .S_AXIS_TLAST(axi_dma_0_M_AXIS_MM2S_TLAST),
         .S_AXIS_TREADY(axi_dma_0_M_AXIS_MM2S_TREADY),

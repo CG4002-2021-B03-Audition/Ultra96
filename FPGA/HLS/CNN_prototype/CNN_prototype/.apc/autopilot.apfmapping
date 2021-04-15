@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="definition.h" path="C:\Users\chuaz\Desktop\Ultra96\FPGA\HLS\CNN_prototype\definition.h"/>
+    <originFiles name="main.cpp" path="C:\Users\chuaz\Desktop\Ultra96\FPGA\HLS\CNN_prototype\main.cpp"/>
+    <originFiles name="math_functions.h" path="C:\Users\chuaz\Desktop\Ultra96\FPGA\HLS\CNN_prototype\math_functions.h"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="C:\Users\chuaz\Desktop\Ultra96\FPGA\HLS\CNN_prototype\CNN_prototype\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

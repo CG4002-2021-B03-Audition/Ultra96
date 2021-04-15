@@ -8,7 +8,7 @@ set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
 set noPortSwitchingFlag 0
-set FloatingPointFlag 0
+set FloatingPointFlag 1
 set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xczu3eg:-sbva484:-1-i
 set SourceFiles {sc {} c ../../main.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile F:/CNNproj/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/solution1.directive
+set DirectiveFile C:/Users/chuaz/Desktop/Ultra96/FPGA/HLS/MLP_samsung_Vivado/MLP_samsung_vivado/solution1/solution1.directive
 set TBFiles {verilog ../testing bc ../testing vhdl ../testing sc ../testing cas ../testing c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

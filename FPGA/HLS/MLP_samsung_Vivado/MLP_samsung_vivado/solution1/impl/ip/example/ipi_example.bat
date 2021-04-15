@@ -5,4 +5,4 @@
 
 @echo off
 
-D:/Xilinx/Vivado/2020.1/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xczu3eg-sbva484-1-i ../xilinx_com_hls_mlp_1_0.zip
+C:/Xilinx/Vivado/2020.1/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xczu3eg-sbva484-1-i ../xilinx_com_hls_mlp_1_0.zip
