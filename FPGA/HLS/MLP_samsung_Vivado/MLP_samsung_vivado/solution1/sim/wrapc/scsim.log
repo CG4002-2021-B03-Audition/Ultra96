@@ -1,5 +1,0 @@
-   Build using "D:/Xilinx/Vivado/2020.1/tps/win64/msys64/mingw64/bin/g++"
-   Compiling main.cpp_pre.cpp.tb.cpp
-   Compiling apatb_mlp.cpp
-   Generating cosim.tv.exe
-Makefile.rules:378: recipe for target 'cosim.tv.exe' failed

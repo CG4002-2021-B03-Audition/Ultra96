@@ -1,4 +1,0 @@
-mlp_weights_0
-mlp_regslice_both
-mlp_regslice_both
-mlp
